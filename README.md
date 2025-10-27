@@ -15,7 +15,7 @@
   <main class="w-full max-w-md p-6">
     <section class="bg-white rounded-2xl shadow-lg p-8">
       <header class="flex items-center gap-4 mb-6">
-        <div class="brand-circle">TX</div>
+        <img src="C:\transx\transx logo.jpg" alt="TransX Logo" class="w-14 h-14 object-contain" />
         <div>
           <h1 class="text-2xl font-semibold leading-tight">TransX</h1>
           <p class="text-sm text-gray-500">Client Portal — Sign in</p>
