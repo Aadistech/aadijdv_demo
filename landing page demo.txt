@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TransX - Smart Urban Mobility</title>
+
+  <style>
+    /* 🎨 General Page Design */
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(180deg, #0f1724 0%, #071028 100%);
+      color: #e6eef8;
+      line-height: 1.6;
+    }
+
+    header {
+      background: rgba(15, 23, 36, 0.9);
+      text-align: center;
+      padding: 40px 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .logo {
+      width: 120px;
+      display: block;
+      margin: 0 auto 10px;
+      border-radius: 12px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #fff;
+      margin: 0;
+    }
+
+    header p {
+      color: #94a3b8;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    p {
+      text-align: center;
+      color: #94a3b8;
+    }
+
+    /* 🧭 About Section */
+    #about {
+      text-align: center;
+    }
+
+    #about p {
+      max-width: 700px;
+      margin: 20px auto;
+    }
+
+    /* 👥 Team Section - Scrollable */
+    #team {
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 15px;
+      padding: 50px 20px;
+    }
+
+    .team-container {
+      display: flex;
+      overflow-x: auto;
+      gap: 30px;
+      padding: 15px;
+      scroll-behavior: smooth;
+    }
+
+    /* Custom Scrollbar (smaller) */
+    .team-container::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    .team-container::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+    }
+
+    .team-container::-webkit-scrollbar-thumb {
+      background: linear-gradient(90deg, #2563eb, #06b6d4);
+      border-radius: 10px;
+    }
+    
+    .member {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      flex: 0 0 200px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* 👇 Adjusted photo positioning */
+    .member img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      object-position: center top; /* ✅ Fix: show full head/hair */
+      border-radius: 50%;
+      margin: 0 auto 10px;
+      display: block;
+      border: 2px solid #06b6d4;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .member img:hover {
+      transform: scale(1.15);
+      box-shadow: 0 0 20px rgba(6, 182, 212, 0.5);
+    }
+
+    .member h3 {
+      margin: 10px 0 5px;
+      color: #fff;
+    }
+
+    .member p {
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
+
+    /* 📞 Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #94a3b8;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #06b6d4;
+      text-decoration: none;
+    }
+
+    /* 📱 Responsive */
+    @media (max-width: 700px) {
+      .team-container {
+        gap: 20px;
+      }
+      .member {
+        flex: 0 0 170px;
+      }
+      .member img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🌟 Header -->
+  <header>
+    <img src="C:\transx\transx logo.jpg" alt="TransX Logo" class="logo">
+    <h1>🚖 TransX</h1>
+    <p>Your Smart Urban Mobility App</p>
+  </header>
+
+  <!-- 🧭 About Section -->
+  <section id="about">
+    <h2>About TransX</h2>
+    <p>TransX is your all-in-one urban transport companion, helping riders and drivers connect seamlessly with real-time tracking, smart payments, and secure rides.</p>
+  </section>
+
+  <!-- 👥 Team Section with Scroller -->
+  <section id="team">
+    <h2>Meet Our Team</h2>
+    <div class="team-container">
+      <div class="member">
+        <img src="C:\transx\Padmaj.jpg" alt="Member 1">
+        <h3>Padmaj Jadhav</h3>
+        <h3>CEO</h3>
+        <p>Frontend Developer</p>
+      </div>
+
+      <div class="member">
+        <img src="C:\transx\Aaditya.jpg" alt="Member 2">
+        <h3>Aaditya Jadhav</h3>
+        <h3>Co-Founder</h3>
+        <p>Data Management and Backend Developer</p>
+      </div>
+
+      <div class="member">
+        <img src="C:\transx\Parth.jpg" alt="Member 3">
+        <h3>Parth Kadam</h3>
+        <h3>Co-Founder</h3>
+        <p>Backend Developer</p>
+      </div>
+
+      <div class="member">
+        <img src="C:\transx\Anushka .jpg" alt="Member 4">
+        <h3>Anushka Jadhav</h3>
+        <p>Backend Developer</p>
+      </div>
+
+      <div class="member">
+        <img src="images/member5.jpg" alt="Member 5">
+        <h3>Dhanashree</h3>
+        <p>Social Media Holder</p>
+      </div>
+
+      <div class="member">
+        <img src="images/member6.jpg" alt="Member 6">
+        <h3>Siddhi Gaikar</h3>
+        <p>Frontend</p>
+      </div>
+
+      <div class="member">
+        <img src="images/member7.jpg" alt="Member 7">
+        <h3></h3>
+        <p>Tester</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📞 Footer -->
+  <footer>
+    <p>© 2025 TransX Team — UrbanXplore Project</p>
+    <p>Connect with us:
+      <a href="https://discord.gg/d8uJz6Pm">Discord</a> |
+      <a href="https://github.com/Aadistech/aadijdv_transx">GitHub</a>
+    </p>
+  </footer>
+
+</body>
+</html>
